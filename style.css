@@ -21,7 +21,7 @@ body{
    background-repeat: no-repeat;
 }
 
-.text_contaner{
+.text_container{
    color: white;
    max-width: 900px;
    margin: 0 auto; 
@@ -53,15 +53,112 @@ body{
     font-size: 96px;
 }
 
-.work{
-    /* margin: 60px; */
+.work {
+    margin: auto;
     display: flex;
-    justify-content: space-around; /* Adjust as needed */ 
+    justify-content: space-around;
     gap: 1rem;
+    width: 70%;
+    margin-top: 60px;
+    flex-wrap: wrap;
 }
 
 .card{
     max-width: 320px;
-    height: 300px;
+    height: 400px;
     box-shadow: 3px 5px 5px rgb(52, 56, 70);
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgb(213, 229, 235);
+    transform: scale(1.08);
+}
+
+.card_content {
+    padding: 28px;
+}
+
+.bottom_section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact{
+    background-color: #515603;
+    width: 50%;
+    padding: 30px;
+    min-height: 300px;
+    padding: 32px;
+    color: white;
+}
+
+.about{
+    background-color: #722300;
+    width:50%;
+    padding: 30px;
+}
+
+.about h2, .contact h2 {
+    font-size: 64px;
+    font-weight: 300;
+    color: white;
+}
+
+.about p, .contact p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer h2{
+    color: white;
+}
+
+
+
+@media  (max-width:767px){
+    .lg_text{
+        font-size: 35px;
+    }
+
+    .black_box h2 {
+        font-size: 43px;
+    }
+    .contact{
+        width: 100%;
+    }
+    
+    .about{
+        width:100%;
+    }
+
+    .bottom_section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 18px;
+    }
+
+    .about h2, .contact h2 {
+        font-size: 34px;
+        font-weight: 500;
+    }
+
+    .footer h2 {
+        color: white;
+        font-size: x-small;
+    }
 }
