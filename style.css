@@ -126,6 +126,60 @@ body{
     color: white;
 }
 
+.profile{
+    display: flex;
+    width: 30%;
+    gap: .5rem;
+    margin-left: 5px;
+}
+
+.profile img{
+    height: 30px;
+    width: 30px;
+}
+
+.footer p{
+    color: white;
+}
+
+
+.footer-content {
+    text-align: center;
+    padding: 20px; 
+}
+
+.footer-title {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 300; 
+}
+
+.detail img{
+    height: 30px;
+    width: 30px;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+}
+.email p{
+    padding-left: 15px;
+    padding-top: 12px;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+}
+.phone p{
+    padding-left: 15px;
+    padding-top: 12px;
+}
 
 
 @media  (max-width:767px){
@@ -160,5 +214,18 @@ body{
     .footer h2 {
         color: white;
         font-size: x-small;
+    }
+
+    .profile {
+        margin-left: 2px;
+    }
+
+    .profile img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .footer-copyright {
+        font-size: 10px; 
     }
 }
